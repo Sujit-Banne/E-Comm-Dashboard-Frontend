@@ -80,6 +80,7 @@ export default function ProductList() {
                 <li>Name</li>
                 <li>Price</li>
                 <li>Category</li>
+                <li>Image</li>
                 <li>Operation</li>
 
             </ul>
@@ -90,6 +91,7 @@ export default function ProductList() {
                         <li>{item.name}</li>
                         <li>{item.price}</li>
                         <li>{item.category}</li>
+                        <li><img src={item.photo} alt="" /></li>
                         <li>
                             <button onClick={() => deleteProduct(item._id)}>Delete</button>
                             <Link to={"/update/" + item._id} >Update </Link>

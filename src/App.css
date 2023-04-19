@@ -101,6 +101,7 @@
 .product-list ul li {
   display: inline-block;
   width: 150px;
+  /* height: 200px;  */
   border: 1px solid skyblue;
   padding: 5px;
 }
